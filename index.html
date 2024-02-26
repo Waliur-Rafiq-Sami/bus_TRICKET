@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAM's Bus</title>
+    <!-- Link of daisyUI and tailwind css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link of css file -->
+    <link rel="stylesheet" href="./bus.css" />
+    <!-- link of font awasam  -->
+    <script
+      src="https://kit.fontawesome.com/e6b4a99a6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <!-- Header  -->
+      <header class="container mx-auto my-5">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown"></div>
+            <a class="btn btn-ghost text-4xl font-bold">Tulip Service</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <button class="btn btn-success btn-outline">
+              <span class="text-xl -mt-1 font-bold"> Bus </span>
+              <span><img src="./images/bus-icon.png" /></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- Main  -->
+      <main>
+        <div class="container mx-auto">
+          <section class="">
+            <div
+              class="hero h-[750px] rounded-3xl overflow-auto"
+              style="background-image: url(./images/banner.png)"
+            >
+              <div class="hero-overlay bg-opacity-0"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-2xl">
+                  <h1 class="mb-5 text-5xl font-bold">
+                    <span class="text-7xl">Let's Journey with</span> <br />
+                    <div class="text-green-500 py-3">Tulip-Poribohon</div>
+                  </h1>
+                  <p class="mb-16">
+                    Tulip-Poribohon owned and operated by Shohoj Limited, is
+                    Bangladesh’s largest online ticket destination, which is
+                    committed to making your life convenient, easier and
+                    smarter.
+                  </p>
+                  <button class="btn bg-[#32CD32] border-none text-2xl pb-1">
+                    Buy Tickets
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="flex justify-center gap-10 -mt-20">
+              <div
+                class="flex items-center gap-5 py-9 px-7 rounded-3xl border-b-4 border-green-500 bg-white"
+              >
+                <div>
+                  <img src="./images/people.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-4xl font-bold">500K+</h1>
+                  <p class="text-xl pt-2">Registered users</p>
+                </div>
+              </div>
+              <!-- card--2  -->
+              <div
+                class="flex items-center gap-5 py-9 px-7 rounded-3xl border-b-4 border-green-500 bg-white"
+              >
+                <div>
+                  <img src="./images/ticket-cupon.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-4xl font-bold">1.7 lacks</h1>
+                  <p class="text-xl pt-2">Tickets sold</p>
+                </div>
+              </div>
+              <!-- card -- 3 -->
+              <div
+                class="flex items-center gap-5 py-9 px-7 rounded-3xl border-b-4 border-green-500 bg-white"
+              >
+                <div>
+                  <img src="./images/stoppage.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="text-4xl font-bold">80+</h1>
+                  <p class="text-xl pt-2">Rental partners</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="mt-20 text-center mb-10 text-5xl font-bold">
+              Best offers for you
+            </div>
+            <div class="mx-auto flex gap-20 w-4/5">
+              <div
+                class="bg-amber-400 flex-1 flex items-center rounded-3xl justify-center gap-7"
+              >
+                <div class="">
+                  <h1 class="text-5xl font-bold">15% OFF</h1>
+                  <p class="my-2 font-bold text-2xl">on your next purchase</p>
+                  <p class="text-xl text-gray-500">use by January 2024</p>
+                </div>
+                <div>
+                  <img src="./images/cupon-devider.png" alt="" />
+                </div>
+                <div class="">
+                  <h1 class="font-bold text-4xl">NEW15</h1>
+                  <p class="text-2xl mt-2 -ml-3 text-gray-500">Coupon Code</p>
+                </div>
+              </div>
+
+              <div
+                class="bg-rose-400 flex-1 flex items-center rounded-3xl justify-center gap-6"
+              >
+                <div class="">
+                  <h1 class="text-5xl font-bold">20% OFF</h1>
+                  <p class="my-2 font-bold text-2xl">on your next purchase</p>
+                  <p class="text-xl text-gray-700">use by January 2024</p>
+                </div>
+                <div>
+                  <img src="./images/cupon-devider.png" alt="" />
+                </div>
+                <div class="">
+                  <h1 class="font-bold text-4xl">Couple 20</h1>
+                  <p class="text-2xl mt-2 ml-2 text-gray-700">Coupon Code</p>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-14">
+              <button
+                class="px-10 py-4 border-2 text-green-500 border-text-green-500 btn-outline rounded-2xl text-xl -mt-1 font-bold"
+              >
+                See All Offers
+              </button>
+            </div>
+          </section>
+        </div>
+        <!-- tricket scetion  -->
+        <section
+          class="mt-20 border-t-4 bg-gray-100 border-green-400 rounded-t-[100px]"
+        >
+          <div class="mt-20 container mx-auto">
+            <!-- text  -->
+            <div class="text-center w-2/3 mx-auto">
+              <h1 class="text-4xl font-bold mb-8">Tulip-Poribohon</h1>
+              <p class="text-xl">
+                Tulip-Poribohon owned and operated by Shohoj Limited, is
+                Bangladesh’s largest online ticket destination, which is
+                committed to making your life convenient, easier and smarter.
+              </p>
+            </div>
+            <!-- tricket  -->
+            <div
+              class="flex justify-around items-center rounded-3xl px-10 bg-white mt-16"
+            >
+              <div>
+                <div class="my-5 flex justify-between items-center">
+                  <div class="flex gap-4 items-center">
+                    <div>
+                      <img src="./images/bus-logo.png" alt="" />
+                    </div>
+                    <div>
+                      <h1 class="text-4xl font-bold">Tulip-Poribohon</h1>
+                      <p class="mt-2 text-xl">Coach-009-WEB ! AC_Business</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex gap-2 items-center px-6 py-4 rounded-xl bg-green-200 bg-opacity-70"
+                  >
+                    <div>
+                      <img src="./images/seat-green-filled.png" alt="" />
+                    </div>
+                    <div class="text-2xl text-green-400">
+                      <span>40</span> Seats left
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-gray-100 m-3 rounded-2xl px-10 py-5">
+                  <div>
+                    <div
+                      class="border-b-4 border-dashed text-xl pt-3 pb-5 flex justify-between"
+                    >
+                      <p>Route</p>
+                      <p class="font-semibold">Tangail - Dhaka</p>
+                    </div>
+                    <div
+                      class="border-b-4 border-dashed text-xl pt-5 pb-5 flex justify-between"
+                    >
+                      <p>Departure Time</p>
+                      <p class="font-semibold">11:00 PM</p>
+                    </div>
+                    <div class="flex gap-5 pt-2 my-5">
+                      <div class="bg-gray-200 py-5 px-5 rounded-2xl text-xl">
+                        <p>Boarding Point - Laxmipur</p>
+                      </div>
+                      <div class="bg-gray-200 py-5 px-5 rounded-2xl text-xl">
+                        <p>Boarding Point - Laxmipur</p>
+                      </div>
+                      <div class="bg-gray-200 py-5 px-5 rounded-2xl text-xl">
+                        <p>Boarding Point - Laxmipur</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <img src="./images/info-devider.png" alt="" />
+              </div>
+
+              <div class="flex gap-6 flex-col justify-center items-center">
+                <div>
+                  <img src="./images/fare.png" alt="" />
+                </div>
+                <div>
+                  <h1 class="mb-3 font-bold text-5xl">550 Taka</h1>
+                  <p class="text-center text-2xl">Per Seat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bus seat Section   -->
+          <div class="pt-20"></div>
+        </section>
+      </main>
+      <!-- Footer  -->
+      <footer></footer>
+    </div>
+  </body>
+</html>
