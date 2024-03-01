@@ -42,7 +42,7 @@ function TotalSeat(even) {
 }
 // add BG Culor
 function addBackgroundColor(even) {
-  even.classList.add("bg-green-500");
+  even.classList.add("bg-green-600");
 }
 
 // Add Seat Name
@@ -114,4 +114,10 @@ function submit() {
   } else {
     addHiddenClass("SubbmitButton");
   }
+}
+
+//lastMenu
+function lastMenu() {
+  addHiddenClass("fullBody");
+  removeHiddenClass("Done");
 }
