@@ -8,7 +8,6 @@ function tricket(even) {
 
 // Total Seat
 function TotalSeat(even) {
-  console.log("sfdsefsf == ", even);
   const seatEliment = document.getElementById("TotalSeat");
   const seatNumber = seatEliment.innerText;
   const currentSeat = parseInt(seatNumber);
@@ -22,7 +21,6 @@ function TotalSeat(even) {
   CurrentSeatEliment.innerText = seat;
   if (seat === 1) {
     removeHiddenClass("sit1");
-    removeHiddenClass("SubbmitButton");
     addSeatName("seat1", even);
     setPrice(550);
   } else if (seat === 2) {
@@ -50,7 +48,6 @@ function addBackgroundColor(even) {
 // Add Seat Name
 function addSeatName(even1, even) {
   const evenElement = document.getElementById(even1);
-  console.log(even);
   evenElement.innerText = even;
 }
 
@@ -69,10 +66,52 @@ function addHiddenClass(even) {
 // set Price
 function setPrice(even) {
   const seatPrice = document.getElementById("totalPrice");
+  const GrandTotal = document.getElementById("GrandTotal");
   seatPrice.innerText = even;
+  GrandTotal.innerText = even;
 }
 //disable
 function disable() {
   removeHiddenClass("Warning");
   addHiddenClass("SubbmitButton");
+}
+
+// Cuppon Code Section
+function cuponSecret() {
+  const getValueOfEliment = document.getElementById("InputCupon");
+  const getValue = getValueOfEliment.value;
+
+  if (getValue === "NEW15") {
+    const discoundGetEliment = document.getElementById("GrandTotal");
+    discoundGetEliment.innerText = 1870;
+    addHiddenClass("cuponBox");
+    removeHiddenClass("discoundShow");
+  } else if (getValue === "Couple 20") {
+    const discoundGetEliment = document.getElementById("GrandTotal");
+    discoundGetEliment.innerText = 1760;
+    addHiddenClass("cuponBox");
+    removeHiddenClass("discoundShow20");
+  } else {
+    addHiddenClass("cuponBox");
+    removeHiddenClass("sorryWrong");
+  }
+}
+//add lesaner
+document.addEventListener("keyup", submit);
+
+// check condition to subbmet button
+function submit() {
+  const checkseatElement = document.getElementById("CurrentSeat");
+  const checkseat = checkseatElement.innerText;
+  const seat = parseInt(checkseat);
+
+  const numberInputElement = document.getElementById("numberValue");
+  const numberInput = numberInputElement.value;
+  const number = parseInt(numberInput);
+
+  if (seat >= 1 && seat <= 4 && number === number) {
+    removeHiddenClass("SubbmitButton");
+  } else {
+    addHiddenClass("SubbmitButton");
+  }
 }
